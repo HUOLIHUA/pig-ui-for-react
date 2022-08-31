@@ -1,0 +1,28 @@
+.tags-wrapper {
+  position: relative;
+  background-color: #fff;
+  margin-bottom: 10px;
+  padding: 10px 60px 10px 10px;
+  :global {
+    .ant-tabs-tab {
+      font-size: 12px;
+    }
+    .ant-tabs-nav {
+      margin-bottom: 0;
+      &::before {
+        content: none;
+      }
+    }
+    .ant-tabs-tab-active {
+      border-bottom-color: #f0f0f0 !important;
+    }
+  }
+
+  .btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 12px;
+  }
+}

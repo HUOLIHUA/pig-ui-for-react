@@ -1,0 +1,24 @@
+.item {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #ffffff;
+  overflow: hidden;
+  width: 16%;
+  cursor: pointer;
+  &:hover {
+    border: 1px dashed #e1e1e1;
+    border-radius: 10px;
+  }
+  .text {
+    width: 100%;
+    display: block;
+    font-size: 12px;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+}

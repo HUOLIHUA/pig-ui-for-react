@@ -1,0 +1,43 @@
+.header-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  padding-left: 260px;
+  background-color: @theme-color;
+  z-index: 20;
+  transition: all 0.3;
+  &.iscollapsed {
+    padding-left: 80px;
+  }
+  .header-content {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    .right {
+      display: flex;
+      align-items: center;
+    }
+    .item {
+      margin: 0 10px;
+    }
+  }
+  .user-info {
+    color: #fff;
+    .avatar {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+    .text {
+      margin: 0 10px;
+    }
+  }
+  .theme-group {
+    display: flex;
+    justify-content: space-between;
+  }
+}
